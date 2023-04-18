@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Title Here</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section>
+			<h1>Welcome to my website!</h1>
+			<p>This is where you can find all sorts of great information.</p>
+			<p>Feel free to browse around and see what you like.</p>
+		</section>
+		
+		<section>
+			<h2>About Me</h2>
+			<p>I'm an expert in all sorts of things and have a lot to share with you!</p>
+			<p>Check out my About page to learn more.</p>
+		</section>
+		
+		<section>
+			<h2>Services</h2>
+			<ul>
+				<li>Service 1</li>
+				<li>Service 2</li>
+				<li>Service 3</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h2>Contact Me</h2>
+			<form action="submit-form.php" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required>
+				
+				<label for="message">Message:</label>
+				<textarea name="message" id="message" required></textarea>
+				
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>
