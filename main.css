@@ -1,0 +1,8 @@
+.text{
+    font-size: 70px;
+    padding: 150px 0;
+    text-align: center;
+    color:rgb(92, 0, 0);
+    font-weight: bold;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px;
+}
