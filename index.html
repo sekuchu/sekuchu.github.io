@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>Branko Sekulovic</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='background.css'>
-    <link rel='stylesheet' type='text/css' href='nav.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet' type='text/css' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
-<!-- Background & animion & navbar & title -->
-  <div class="container-fluid">
-<!-- Background animtion-->
- <div class="background">
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-</div>
-    <!-- the actual body -->
-<header>
-    <br>
-        <nav>
-            <h2 class="logo">Branko Sekulovic</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <button type="button">Download CV</button>
-        </nav>
+    <!-- Background & animion & navbar & title -->
+    <div class="container-fluid">
+        <!-- Background animtion-->
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <!-- the actual body -->
+        <header>
+            <br>
+            <nav>
+                <h2 class="logo">Branko Sekulovic</h2>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <button type="button" class="button">Download CV</button>
 
-<div class="text">Under Construction</div>
-</header>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><button type="button">Download CV</button></li>
+                </ul>
+            </div>
+
+            <div class="text">Under Construction</div>
+        </header>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleBtn = document.querySelector('.toggle-btn')
+                const toggleBtnIcon = document.querySelector('.toggle-btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                }
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            });
+        </script>
+
 </body>
+
 </html>
