@@ -1,5 +1,4 @@
 body {
-    font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,8 +12,8 @@ body {
 
 /* ============= Animation background ========= */
 .background {
-    background: linear-gradient(132deg, #19087e, #591BC5, #161722);
-    background-size: 400% 400%;
+    background: #041C32;
+
     animation: Gradient 15s ease infinite;
     position: relative;
     height: 100vh;
@@ -42,8 +41,8 @@ body {
 
 .cube:nth-child(2) {
     animation-delay: 2s;
-    left: 25vw;
-    top: 40vh;
+    left: 10vw;
+    top: 35vh;
 }
 
 .cube:nth-child(3) {
@@ -111,19 +110,25 @@ header {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', Courier, monospace;
+}
+
+.red {
+    color: #E94560;
+    font-weight: bold;
 }
 
 nav {
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 10% 0 10%;
+    padding: 1% 6% 0 6%;
 }
 
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 nav ul li {
@@ -135,19 +140,29 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ea1538;
+    color: #E94560;
+    font-size: 20px;
     transition: .3s;
+}
+
+.navline {
+    width: 80%;
+    height: 7px;
+    border: 0 none;
+    margin: 200px auto 90px auto;
 }
 
 button {
     border: none;
-    background: #ea1538;
-    padding: 12px 30px;
-    border-radius: 30px;
+    background: #E94560;
+    padding: 10px 26px;
+    border-radius: 15px;
     color: white;
     font-weight: bold;
     font-size: 15px;
@@ -157,15 +172,6 @@ button {
 button:hover {
     transform: scale(1.15);
     cursor: pointer;
-}
-
-.text {
-    font-size: 70px;
-    padding: 150px 0;
-    text-align: center;
-    color: rgb(92, 0, 0);
-    font-weight: bold;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px;
 }
 
 .toggle-btn {
@@ -202,7 +208,7 @@ button:hover {
     top: 60px;
     width: 300px;
     height: 0px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #fc4e6b25;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -224,7 +230,7 @@ button:hover {
 }
 
 .dropdown_menu.open {
-    height: 260px;
+    height: 280px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -232,4 +238,27 @@ button:hover {
         left: 2rem;
         width: unset;
     }
+}
+
+.start {
+    padding: 20%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.startName {
+    color: #E94560;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cursive {
+    font-family: cursive;
+    font-style: italic;
+}
+
+.spacing {
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS';
 }
