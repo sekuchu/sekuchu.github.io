@@ -11,23 +11,15 @@
     <link rel='stylesheet' type='text/css' href='main.css'>
     <script src='main.js'></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="particles.js"></script>
 </head>
 
 <body>
     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-
-    <!-- Background & animation & navbar & title -->
-    <div class="container-fluid">
-        <!-- Background animation-->
-        <div class="background">
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-        </div>
-        <!-- the actual body -->
-        <header>
+    <!-- Body -->
+    <div id="particles-js" class="javaparticles">
+    <header>
+        
             <br>
             <nav>
                 <h3 class="logo"><span class="red">&lt;</span>sekuchu<span class="red">/&gt;</span></h3>
@@ -59,16 +51,26 @@
             <hr class="navLine">
             <p class="start">
                 Hi, my name is <span class="startName">Branko Sekulovic</span><br>
-                i <span class="cursive">design</span> and <b class="spacing">develop</b> <span class="typing"></span>
+                i <span class="cursive">design</span> and <b class="spacing">develop</b>
+                <span class="typing"></span>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                work in progress...
             </p>
-        </header>
-        <script>
-            var typed = new Typed(".typing", {
-                strings: ["things", "mobile apps", "websites", "games", "ux/ui"],
-                typeSpeed: 150,
-                backSpeed: 150,
-                loop: true
-            })  </script>
+    </header>
+</div>
+    <script src="http://www.jsdelivr.com/#!particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+
+        var typed = new Typed(".typing", {
+            strings: ["things", "mobile apps", "websites", "games", "ux/ui"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })  
+    </script>
 </body>
 
 </html>
