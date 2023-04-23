@@ -196,5 +196,5 @@ button:hover {
     /* position it to start at the top of the page */
     top: 0;
     /* put it behind other content */
-    z-index: -1;
+    z-index: -10;
 }
